@@ -22,5 +22,4 @@ input.addEventListener('keydown', (event) => {
 copyButton.addEventListener('click', () => {
     outputField.select();
     document.execCommand('copy');
-    //alert('Copied to clipboard!');
 });
