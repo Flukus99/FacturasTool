@@ -11,7 +11,6 @@ input.addEventListener('keydown', (event) => {
             .split(/\r?\n/)
             .map(code => code.trim())
             .filter(code => code !== '')
-            .map(code => code.replace(/\s+/g, ''))
             .map(code => `'${code}'`)
             .join(',');
 
@@ -21,7 +20,7 @@ input.addEventListener('keydown', (event) => {
 });
 
 copyButton.addEventListener('click', () => {
-    outputField.select()
-    document.execCommand('copy')
-    //alert('Copied to clipboard!')
+    outputField.select();
+    document.execCommand('copy');
+    //alert('Copied to clipboard!');
 });
